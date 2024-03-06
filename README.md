@@ -89,9 +89,9 @@ The database has only one table called TRANSLATION, this table has 3 columns : i
 - si is an int, it is used by the database (much smaller to store than strings).
 - translated is a xored text, it is the localized string.
 
-| id | si | translated
-| - | - |
-| DB_hero_name_100100 | 25909 | Meliodas
-| DB_hero_name_102900 | 25424 | Twigo
-| DB_hero_group_name_1135003 | 25837 | "Infinity" Great Mage Merlin
+| id | si | translated |
+| - | - | - |
+| DB_hero_name_100100 | 25909 | Meliodas |
+| DB_hero_name_102900 | 25424 | Twigo |
+| DB_hero_group_name_1135003 | 25837 | "Infinity" Great Mage Merlin |
 
