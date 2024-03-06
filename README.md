@@ -85,11 +85,9 @@ The game texts are stored in a SQLite database. Each language has its own databa
 
 The database has only one table called TRANSLATION, this table has 3 columns : id, si and translated.
 
-id is a text, the game source code uses constant strings to access the data. (ie: "DB_hero_name_100100")
-
-si is an int, it is used by the [database](#database) (much smaller to store than strings). (ie: 25909)
-
-translated is a xored text, it is the localized string (ie: "Meliodas" after decryption).
+- id is a text, the game source code uses constant strings to access the data.
+- si is an int, it is used by the database (much smaller to store than strings).
+- translated is a xored text, it is the localized string.
 
 | id | si | translated
 | - | - |
