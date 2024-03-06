@@ -1,0 +1,42 @@
+﻿public class DestroyClearResult
+{
+    public int roomSN;
+    public int groupID;
+    public int stageId;
+    public int userExp;
+    public List<BattleSkinResultInfo> battleSkinResultInfoList = new List<BattleSkinResultInfo>();
+    public List<UserNpcResult> npcResultList = new List<UserNpcResult>();
+    public ItemResultInfo goldItemResultInfo = new ItemResultInfo();
+    public ItemResultInfo ownerRewardInfo = new ItemResultInfo();
+    public ItemResultInfo firstClearItemResultInfo = new ItemResultInfo();
+    public List<ItemResultInfo> questRewardInfoList = new List<ItemResultInfo>();
+    public List<ItemResultInfo> defaultRewardInfoList = new List<ItemResultInfo>();
+    public List<ItemResultInfo> globalDropItemResultInfoList = new List<ItemResultInfo>();
+    public ItemResultInfo repulseItemResultInfo = new ItemResultInfo();
+    public List<ItemResultInfo> passiveItemResultInfoList = new List<ItemResultInfo>();
+    public ItemResultInfo foodBuffItemReslutInfo = new ItemResultInfo();
+    public ItemResultInfo attackPointRewardResultInfo = new ItemResultInfo();
+    public ItemResultInfo demonPointItemResultInfo = new ItemResultInfo();
+    public ItemResultInfo repeatItemResultInfo = new ItemResultInfo();
+    public List<QuestProgressInfo> questProgressInfoList = new List<QuestProgressInfo>();
+    public MissionResult missionResult = new MissionResult();
+    public List<UserPlayCountEventInfo> playCountEventInfoList = new List<UserPlayCountEventInfo>();
+    public int normalGroupIndex;
+    public int ownerGroupIndex;
+    public long teamMateUSN;
+    public string teamMateNickname = string.Empty;
+    public bool isFriend;
+    public int ingameGoldBuffAddValue;
+    public int getBasepointExp;
+    public int usedFoodID;
+    public BasePointInfo basepointInfo = new BasePointInfo();
+    public UserBuffInfo userBuffInfo = new UserBuffInfo();
+    public StageInfo stageInfo = new StageInfo();
+    public List<UserGlobalDropEventInfo> updateUserGlobalDropEventInfoList = new List<UserGlobalDropEventInfo>();
+    public int teamMatePlayTitleID;
+    public UserADViewInfo adViewRouletteInfo = new UserADViewInfo();
+    public List<UserHeroPassiveGroupInfo> heroPassiveGroupInfoList = new List<UserHeroPassiveGroupInfo>();
+    public byte liveJoinCount;
+    public List<int> usedEventLobbyBuffIdList = new List<int>();
+    public DestroyDiscoverInfo destroyDiscoverInfo = new DestroyDiscoverInfo();
+}

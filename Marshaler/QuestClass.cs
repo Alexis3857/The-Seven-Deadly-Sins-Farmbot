@@ -1,0 +1,20 @@
+﻿public enum QuestClass : byte
+{
+    Story,
+    Side,
+    Loop,
+    Loop_Random,
+    Lobby,
+    Guide,
+    Guide_List,
+    Another,
+    North,
+    North_Side,
+    Event,
+    Event_Loop,
+    Event_List,
+    Event_Branch,
+    Event_Daily,
+    Event_Stepup_Mission,
+    Disaster
+}

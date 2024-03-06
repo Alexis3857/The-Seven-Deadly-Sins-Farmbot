@@ -1,0 +1,24 @@
+﻿public enum WeekStageType : byte
+{
+    None,
+    MaterialStage_1,
+    MaterialStage_2,
+    MaterialStage_3,
+    MaterialStage_4,
+    MaterialStage_5,
+    MaterialStage_6,
+    MaterialStage_7,
+    MaterialStage_8,
+    MaterialStage_9,
+    MaterialStage_10,
+    MaterialStage_11,
+    MaterialStage_12,
+    Event_Stage_Week,
+    Time_Limit_01,
+    Time_Limit_02,
+    Time_Limit_03,
+    CoinDungeon_01,
+    CoinDungeon_02,
+    CoinDungeon_03,
+    Max
+}

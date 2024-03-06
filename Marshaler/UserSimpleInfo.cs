@@ -1,0 +1,43 @@
+﻿public class UserSimpleInfo
+{
+    public DateTime skinCostumeExpireDate;
+    public DateTime weaponCostumeExpireDate;
+    public DateTime headCostumeExpireDate;
+    public long stageStartTimeTicks;
+    public long USN;
+    public string NickName = string.Empty;
+    public int userExp;
+    public int mainSkinID;
+    public int mainSkinExp;
+    public int mainCostumeGroupID;
+    public int mainWeaponCostumeGroupID;
+    public int mainHeadCostumeGroupID;
+    public bool mainIsHeadStyleChanged;
+    public List<SimpleInfoSlotInfo> simpleInfoSlotInfoList = new List<SimpleInfoSlotInfo>();
+    public int guildSN;
+    public bool friendReddot;
+    public bool friendApplyReddot;
+    public bool guildReddot;
+    public int bossTopClearRegion;
+    public int topClearStoryQuestID;
+    public DestroyInviteOption destroyInviteOption;
+    public bool isGuildInvitationOn;
+    public GuildRoomPoint guildRoomPoint = new GuildRoomPoint();
+    public bool guildInfoRefresh;
+    public int topVisitBasepointID;
+    public int topClearMainStageID;
+    public string guildName = string.Empty;
+    public int guildIconID;
+    public int guildSubIconID;
+    public int guildBGIconID;
+    public FriendlyMatchInviteOption friendlytMatchInviteOption;
+    public int friendCookingEatTotalCount;
+    public bool guildReddot1;
+    public bool guildReddot2;
+    public bool guildReddot3;
+    public byte recipeOrderCount;
+    public int topClearEventQuestID;
+    public int playTitleID;
+    public int arenaSmashBattlePoint;
+    public long arenaSmashRecordSN;
+}

@@ -1,0 +1,30 @@
+﻿public class ArenaRealTimePvp_LoginInfo
+{
+    public ArenaLeagueGrade upperGrade;
+    public byte upperGradeNumber;
+    public int upperRankPoint;
+    public int upperTotalWinCount;
+    public int upperTotalPlayCount;
+    public bool upperJoinAble;
+    public bool upperRewardAble;
+    public ArenaLeagueGrade lowerGrade;
+    public byte lowerGradeNumber;
+    public int lowerRankPoint;
+    public int lowerTotalWinCount;
+    public int lowerTotalPlayCount;
+    public bool lowerJoinAble;
+    public bool lowerRewardAble;
+    public int arenaRealTimePvpLowerRemainSEC;
+    public int arenaRealTimePvpRemainSEC;
+    public int arenaRealTimedecisionRemainSEC;
+    public bool pvpSeasonRewardAble;
+    public int pvpSeasonID;
+    public bool rankingRewardAble;
+    public bool rankingJoinAble;
+    public int limitRankPoint;
+    public int limitTotalWinCount;
+    public int limitTotalPlayCount;
+    public bool limitJoinAble;
+    public bool limitRewardAble;
+    public int arenaRealTimePvpLimitRemainSec;
+}

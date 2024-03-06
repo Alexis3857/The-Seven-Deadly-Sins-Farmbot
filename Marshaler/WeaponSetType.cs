@@ -1,0 +1,20 @@
+﻿public enum WeaponSetType : byte
+{
+    None,
+    Onslaught,
+    Life,
+    Concentration,
+    Resistance,
+    Pierce,
+    MindsEye,
+    IronWall,
+    Congeniality,
+    Regeneration,
+    Recovery,
+    Fortitude,
+    Lifesteal,
+    Alchemy,
+    Strengthen,
+    Luck,
+    Max
+}
