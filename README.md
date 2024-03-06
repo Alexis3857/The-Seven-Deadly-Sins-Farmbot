@@ -4,7 +4,7 @@ Program made to play and clear any content of the Korean and Japanese versions o
 
 This repository is a sample of the entire farmbot. Running it as is only logs into an account and does nothing else.
 
-I created and made public the whole farmbot in November 2022. It was later shut down because the risk of a game account getting banned was too high.
+I created and made public the whole farmbot in November 2022. It shut it down later because the risk of an account getting banned was too high.
 
 I'm not at ease with explaining things and English isn't my native language so sorry if I don't make sense, but you can always ask questions on discord (alexisc_) I'll be happy to answer.
 
@@ -30,7 +30,7 @@ Get the dlls ProudNetClientPlugin.dll and ProudDotNetClientUnity.dll from the ga
 The code in /7dsgcFarmbot/GameClient manages the game client.
 The code inside the Marshaler project is also very important.
 
-The game client is responsible for all the communications with the game servers, which is the second part of the authentication and all the requests to play the game (start a quest, finish a quest, win a stage, summon, upgrade a unit...).
+The game client is responsible for all the communications with the game servers and does the requests to play the game (start a quest, finish a quest, win a stage, summon, upgrade a unit...).
 
 The game uses a third party software called [Proud Net](https://proudnet.com/) from Nettention and the remote method invocation (RMI) mechanism. There are about 1000 different RMI.
 
@@ -44,13 +44,11 @@ GamePacketHandler will initialize and store the Stubs with their callbacks split
 
 PacketManager is a bit complex, it's a singleton that contains the GameClient object and that will process the requests enqueued by GameProxy, it has 2 threads running in the background : 
 
-- UpdateThread that let Proud Net call all the callbacks every 10 milliseconds.
+- UpdateThread that let ProudNet call all the callbacks every 10 milliseconds.
 - ProcessMessageThread that will wait for a request to be enqueued, send it and wait for a response.
 
 It was my first time dealing with multi threading and honestly I think I did it very badly, since the responses are received in callbacks by another thread I found it difficult to wait for the response and continue the execution afterwards, what I did was use AutoResetEvent to lock the main thread after enqueuing and resume it when the response is received, but that means only the main thread can send requests, sending a request in a callback will stuck the program forever.
-
 There is definitely a better way to write this class, and even if I did give up updating the program, I'd love to know how to improve this class if you have ideas.
-
 
 The Marshaler project contains the classes MarshalerRead and MarshalerWrite used to serialize and deserialize objects from received RMI responses.
 MarshalerWrite will be used by SevenDSGameC2S.Proxy, a class that contains a method for each RMI request, to serialize the objects into a Nettention.Proud.Message and send the message to GameProxy.
